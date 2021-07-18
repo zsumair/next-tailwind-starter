@@ -33,7 +33,7 @@ export default function Home() {
     </div>
 </nav>
 
-    <div className="flex flex-col items-center justify-center min-h-screen">
+    <div className="flex flex-col items-center justify-center" style={{height:"90vh"}}>
       <Head>
         <title>Syed Zoheb Ali Sumair || FrontEnd Developer</title>
         <link rel="icon" href="/favicon.ico" />
@@ -60,9 +60,13 @@ export default function Home() {
         <p className="mt-4 text-l text-gray-600 ">
         Sometimes i work on small side projects which help the community in some way. Mostly i use libraries and frameworks like React, Next.js, Gatsby, Tailwind etc on the frontend and Express.js in the backend.
         </p>
+
+        <p className="mt-4 text-l text-gray-800 underline">
+      Libraries/ Frameworks:
+        </p>
         
         <p className="mt-4 text-l text-gray-600 ">
-        Mostly i use libraries and frameworks like <span style={{position:"relative"}}><RoughNotation {...props} >React, Next.js, Gatsby, Tailwind, Express.js </RoughNotation></span>
+       <RoughNotation {...props} >React, Next.js, Gatsby, Tailwind, Express.js </RoughNotation>
         </p>
         </div>
       </RoughNotation>

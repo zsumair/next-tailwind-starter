@@ -1,3 +1,3 @@
-# Next.js + Tailwind CSS Starter Boilerplate
+# Next.js + Tailwind Personal site
 
 

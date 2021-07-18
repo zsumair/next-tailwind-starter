@@ -1,7 +1,14 @@
 import Head from 'next/head';
+import { render } from 'react-dom';
 import { RoughNotation, RoughNotationGroup } from "react-rough-notation";
 
 export default function Home() {
+  const props = {
+    type:"highlight",
+    color:"#ffd54f",
+    show:true,
+    animate:true,
+  };
   return (
     <>
     <nav class="bg-white shadow">
@@ -23,8 +30,6 @@ export default function Home() {
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
         </svg>
         </a>
-
-     
     </div>
 </nav>
 
@@ -54,6 +59,10 @@ export default function Home() {
 
         <p className="mt-4 text-l text-gray-600 ">
         Sometimes i work on small side projects which help the community in some way. Mostly i use libraries and frameworks like React, Next.js, Gatsby, Tailwind etc on the frontend and Express.js in the backend.
+        </p>
+        
+        <p className="mt-4 text-l text-gray-600 ">
+        Mostly i use libraries and frameworks like <span style={{position:"relative"}}><RoughNotation {...props} >React, Next.js, Gatsby, Tailwind, Express.js </RoughNotation></span>
         </p>
         </div>
       </RoughNotation>

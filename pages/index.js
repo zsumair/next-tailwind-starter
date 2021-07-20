@@ -109,7 +109,15 @@ export default function Home() {
                 <p className="mt-4 text-l text-gray-600 ">
                   Frontend developer and procastinator. I love making tools that
                   are user-friendly, simple and delightful. Currently working on
-                  Frontend(sometimes backend) at Inibii Technnologies.
+                  Frontend(sometimes backend) at{" "}
+                  <a
+                    href="https://energiapp.com/"
+                    target="_blank"
+                    className="text-red-400"
+                  >
+                    Energiapp
+                  </a>
+                  .
                 </p>
                 <p className="mt-4 text-l text-gray-600 ">
                   Sometimes i work on small side projects which help the

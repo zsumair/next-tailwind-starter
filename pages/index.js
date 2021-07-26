@@ -90,6 +90,8 @@ export default function Home() {
               show={true}
               animate={true}
               strokeWidth={2}
+              animationDelay={800}
+              animationDuration={2000}
             >
               <h1 className="text-3xl font-bold rainbow-text">
                 Hey there, I am Syed Zoheb Ali Sumair.
@@ -104,6 +106,8 @@ export default function Home() {
               show={true}
               animate={true}
               brackets={["left", "right"]}
+              animationDelay={600}
+              animationDuration={2000}
             >
               <div>
                 <p className="mt-4 text-l text-gray-600 ">
@@ -129,7 +133,11 @@ export default function Home() {
                 </p>
 
                 <p className="mt-4 text-l text-gray-600 ">
-                  <RoughNotation {...props}>
+                  <RoughNotation
+                    {...props}
+                    animationDelay={400}
+                    animationDuration={2000}
+                  >
                     React, Next.js, Gatsby, Tailwind, Express.js{" "}
                   </RoughNotation>
                 </p>
